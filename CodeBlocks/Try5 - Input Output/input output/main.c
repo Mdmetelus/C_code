@@ -1,16 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main() {
 
     char str[100]; //string array of 100
     int i; // integer
 
-    printf("Enter a value: \n"); //displays data
-    //scanf("%s %d, str, &i"); //reads imput from the keyboard
-    scanf("%d", &i);
-    printf("\nYou Entered: %d\n", i);
-    //printf("\nYou enterd: %s %d ", str, i);
+    printf("Enter a value: "); //displays data
+
+    scanf("%d %s", &i, str); //reads imput from the keyboard
+
+    printf("\nYou Entered: %d:::::%s\n", i, str);
 
     return 0;
 }
