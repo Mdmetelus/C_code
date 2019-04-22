@@ -15,5 +15,13 @@ int main() {
 
   f = 3 + 2.6;
 
+  printf("f is %f\n", f);
+  z = 3 + 2.6;
+
+  char *s; //char 8 bit integer that refer to the ascii code -s is a pointer to a car-
+
+  s = "Hello, world!"; // both sides have to have the same kind of pointer type( they are both char pointers )
+  //a pointer is an index into your memory array, its like the key in your key value pair
+
   return 0;
 }
