@@ -25,8 +25,13 @@ int main(void) {
             print("Beej!\n");
             break;
 
+        case HALT:
+            halted = 1;
+            break;
+
         default:
-            printf("Unknown")
+            printf("Unknown instruction at %d: %d\n", pc, current_inst)
+            exit(1);
     }
 
     pc++; // move to next instruction
